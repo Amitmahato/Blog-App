@@ -18,11 +18,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "packages/user/pages/index.js",
-    "packages/admin/pages/_app.js",
-    "packages/admin/pages/index.js",
-    "packages/user/pages/_app.js",
-    "packages/user/pages/_app.js"
+    "packages/user/**/*.js",
+    "packages/user/**/*.jsx",
+    "packages/admin/**/*.js",
+    "packages/admin/**/*.jsx"
   ],
   "exclude": ["node_modules"]
 }
