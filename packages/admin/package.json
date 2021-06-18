@@ -6,7 +6,8 @@
     "dev": "next dev -p $ADMIN_PORT",
     "build": "next build",
     "start": "next start -p $ADMIN_PORT",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@types/react": "^17.0.11",
@@ -26,6 +27,7 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.14.5",
     "eslint": "7.28.0",
     "eslint-config-next": "11.0.0",
     "jest": "^27.0.4"
