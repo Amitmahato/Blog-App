@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "bootstrap":"yarn install; lerna bootstrap;",
+    "dev":"NODE_ENV=development node -r ./dotenv.config.js node_modules/.bin/lerna run dev --parallel",
+    "build":"node -r ./dotenv.config.js node_modules/.bin/lerna run build --parallel",
+    "start":"NODE_ENV=production node -r ./dotenv.config.js node_modules/.bin/lerna run start --parallel",
+    "dev:admin":"NODE_ENV=development node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream dev",
+    "build:admin":"node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream build",
+    "start:admin":"node -r ./dotenv.config.js node_modules/.bin/lerna run --scope admin --stream start",
+    "dev:user":"NODE_ENV=development node -r ./dotenv.config.js node_modules/.bin/lerna run --scope user --stream dev",
+    "build:user":"node -r ./dotenv.config.js node_modules/.bin/lerna run --scope user --stream build",
+    "start:user":"NODE_ENV=production node -r ./dotenv.config.js node_modules/.bin/lerna run --scope user --stream start"
+  },
+  "workspaces":[
+    "packages/*"
+  ]
+}
